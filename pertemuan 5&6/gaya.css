@@ -1,0 +1,24 @@
+h3{
+    color: yellow;
+    font-size: 10px;
+}
+
+/* EMBENDED */
+.gayatombol{
+    background-color: brown;
+    padding: 8px 16px;
+    margin-left: 200px;
+    color: red;
+}
+
+#gayatombol2{
+    background-color: maroon;
+    color: azure;
+}
+
+/* PADDING TUH TOP RIGHT BOTTOM LEFT. JADI SEARAH JARUM JAM */
+/* MARGIN JUGA GITU 
+tapi margin bisa lebih spesifik seperti margin top, margin right, margin bottom, margin left*/
+
+/* jadi kalau misalnya padding:8px 16px berarti top-bottom, right-left 
+tapi kalau padding:8px berarti itu keseluruhan. berlaku juga untuk margin*/
