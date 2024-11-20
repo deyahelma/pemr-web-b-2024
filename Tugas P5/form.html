@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir BRI</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        height: 260vh;
+        }
+        .container {
+        width: 90%;
+        max-width: 800px;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 12px;
+        }
+        .header{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .header p{
+            padding: 0px;
+            margin: 0px;
+            font-weight: bold;
+        }
+        .header h2{
+            padding: 0px;
+            margin: 0px;
+        }
+        .header h6{
+            padding: 0px;
+            margin: 0px;
+        }
+        .header-right{
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            margin: 0px;
+            width: 50px;
+            height: auto;
+        }
+        .header-text h1{
+            font-size: 1.8em;
+            margin: 0px;
+            padding: 0px;
+            font-weight: bold;
+        }
+        .header-text p{
+            font-size: 0.9em;
+            margin: 0px;
+        }
+        .cif-label{
+            box-sizing: border-box;
+            background-color: black;
+            width: 44px;
+            margin: 0;
+            padding: 0px 4px 0px 4px;
+            display: flex;
+            color: white;
+            font-weight: bold;
+        }
+        .cif-input{
+            display: flex;
+            margin-left: 10px;
+            width: 150px;
+            align-items: center;
+        }
+        .content{
+            width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .form-section h2{
+            margin: 0px;
+            padding: 0px;
+        }
+        .form-group{
+            margin: 10px 0;
+        }
+        .form-group label{
+            font-size: 12px;
+            display:inline-block;
+            width: 150px;
+            color: #333333;
+        }
+        .form-group input[type="radio"] {
+            margin-left: 10px;
+        }
+        .note{
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .form-group{
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .small-input{
+            width: 60px;
+            padding: 5px;
+            font-size: 12px;
+            /* border: 1px solid #ccc; */
+            /* border-radius: 4px; */
+            margin-right: 5px;
+        }
+        .large-input {
+            width: calc(100% - 160px);
+            padding: 5px;
+            font-size: 12px;
+            /* border: 1px solid #ccc;
+            border-radius: 4px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h2>Formulir Aplikasi Rekening</h2>
+                <p>Perorangan (AR-01)</p>
+                <h6><i>Diisi Oleh Bank</i></h6>
+                <div class="cif-box">
+                    <span class="cif-label">CIF<input type="text" class="cif-input"></span>
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="logo.svg" alt="Logo Bank BRI" class="logo"> 
+                    <div class="header-text">
+                        <h1>Bank BRI</h1>
+                        <p>Melayani Dengan Setulus Hati</p>
+                    </div>
+            </div>
+        </header>
+        <div class="content">
+            <h7>Mohon diisi oleh nasabah dengan huruf cetak pada kolom
+                berwarna putih dan berikan tanda ceklis sesuai pilihan
+            </h7><br>
+            <span class="namalengkap">Nama Lengkap: <input type="text" class="nama-text"></span>
+            <div class="form-section">
+                <h2>DATA NASABAH</h2>
+                <h2>DATA PRIBADI</h2>
+
+                <form>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <label><input type="radio" name="jenis_kelamin" value="pria">Pria</label>
+                        <label><input type="radio" name="jenis_kelamin" value="wanita">Wanita</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Kewarganegaraan:</label>
+                        <label><input type="radio" name="kewarganegaraan" value="wni"> WNI</label>
+                        <label><input type="radio" name="kewarganegaraan" value="wna"> WNA</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Tempat Lahir:<input type="text" name="tempat_lahir"></label>
+                        <label>Tanggal Lahir:<input type="text" name="tanggal_lahir"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama Ibu Kandung:<input type="text" name="nama_ibu_kandung"></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Identitas:</label>
+                        <label><input type="radio" name="jenis_identitas" value="ktp"> KTP</label>
+                        <label><input type="radio" name="jenis_identitas" value="sim"> SIM</label>
+                        <label><input type="radio" name="jenis_identitas" value="paspor"> Paspor</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Nomor Identitas:</label>
+                        <input type="text" name="no_identitas">
+                    </div>
+                    <div class="form-group">
+                        <label>Pendidikan Terakhir:</label>
+                        <label><input type="radio" name="pendidikan" value="sd"> SD</label>
+                        <label><input type="radio" name="pendidikan" value="sltp"> SLTP</label>
+                        <label><input type="radio" name="pendidikan" value="slta"> SLTA</label>
+                        <label><input type="radio" name="pendidikan" value="diploma"> Diploma</label>
+                        <label><input type="radio" name="pendidikan" value="sarjana"> Sarjana</label>
+                        <label><input type="radio" name="pendidikan" value="lainnya"> Lainnya</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Agama:</label>
+                        <label><input type="radio" name="agama" value="islam">Islam</label>
+                        <label><input type="radio" name="agama" value="katolik">Katolik</label>
+                        <label><input type="radio" name="agama" value="protestan">Protestan</label>
+                        <label><input type="radio" name="agama" value="budha">Budha</label>
+                        <label><input type="radio" name="agama" value="hindu">Hindu</label>
+                        <label><input type="radio" name="agama" value="lainnya">Lainnya</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Status Perkawinan:</label>
+                        <label><input type="radio" name="status_perkawinan" value="belum_kawin"> Belum Kawin</label>
+                        <label><input type="radio" name="status_perkawinan" value="kawin"> Kawin</label>
+                        <label><input type="radio" name="status_perkawinan" value="cerai"> Cerai</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Hobi Nasabah</label>
+                        <input type="text" name="hobi_nasabah">
+                    </div>
+                    <div class="form-group">
+                        <label>Kode POS sesuai alamat pada ID:</label>
+                        <input type="text" name="kode_pos">
+                    </div>
+
+                    <p class="note">Alamat Domisili (Diisi hanya apabila berbeda dengan alamat pada identitas):</p>
+                    <div class="form-group">
+                        <label>RT/RW:</label>
+                        <input type="text" name="rt" class="small-input">
+                        <span>/</span>
+                        <input type="text" name="rw" class="small-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Kelurahan/Desa:</label>
+                        <input type="text" name="kelurahan" class="large-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Kecamatan:</label>
+                        <input type="text" name="kecamatan" class="large-input">
+                        <label>Kota:</label>
+                        <input type="text" name="kota" class="large-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Provinsi: </label>
+                        <input type="text" name="Provinsi" class="large-input">
+                        <label>Kode Pos: </label>
+                        <input type="text" name="kode_pos" class="large-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Telepon:</label>
+                        <input type="text" name="telepon" class="large-input">
+                        <label>Email:</label>
+                        <input type="text" name="email" class="large-input">
+                    </div>
+                    <div class="form-section2">
+                        <h2>DATA PEKERJAAN</h2>
+                    </div>
+                    <div class="form-group2">
+                        <label>Jenis Pekerjaan:</label>
+                        <label><input type="radio" name="Pekerjaan" value="PNS">PNS</label>
+                        <label><input type="radio" name="Pekerjaan" value="TNI/polri">TNI/polri</label>
+                        <label><input type="radio" name="Pekerjaan" value="Peg.Swasta">Peg.Swasta</label>
+                        <label><input type="radio" name="Pekerjaan" value="Pegawai BUMN">Pegawai BUMN</label>
+                        <label><input type="radio" name="Pekerjaan" value="Profesional">Profesional</label>
+                        <label><input type="radio" name="Pekerjaan" value="Wiraswasta">Wiraswasta</label><br>
+                        <label>Lainnya:</label>
+                        <input type="text" name="lainnya" class="grup"><br>
+                        <label>Nama Kantor/Tempat Bekerja:<input type="text" name="namakantor" class="grup"></label><br>
+                        <label>Bidang Pekerjaan: <input type="text" name="bidangpekerjaan" class="grup"></label><br>
+                        <label>Lama Bekerja: <input type="text" name="lamabekerja" class="grup"></label><br>
+                        <label>Jabatan : <input type="text" name="jabatan" class="grup"></label><br>
+                        <label>NPWP Nasabah : <input type="text" name="NPWPnasabah" class="grup"></label><br>
+                        <label>Alamat Kantor/Tempat Bekerja : <input type="text" name="alamatkantor" class="grup"></label><br>
+                        <label>NPWP Nasabah : <input type="text" name="NPWPnasabah" class="grup"></label><br>
+                        <div class="form-group">
+                            <label>RT/RW:</label>
+                            <input type="text" name="rt" class="small-input">
+                            <span>/</span>
+                            <input type="text" name="rw" class="small-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Kelurahan/Desa:</label>
+                            <input type="text" name="kelurahan" class="large-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Kecamatan:</label>
+                            <input type="text" name="kecamatan" class="large-input">
+                            <label>Kota:</label>
+                            <input type="text" name="kota" class="large-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Provinsi: </label>
+                            <input type="text" name="Provinsi" class="large-input">
+                            <label>Kode Pos: </label>
+                            <input type="text" name="kode_pos" class="large-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Telepon:</label>
+                            <input type="text" name="telepon" class="large-input">
+                            <label>Email:</label>
+                            <input type="text" name="email" class="large-input">
+                        </div>
+                        <div class="form-group">
+                        <h2>Alamat Surat Menyurat :</h2>
+                        <label><input type="radio" name="alamatsurat" value="Sesuai ID">Sesuai ID</label>
+                        <label><input type="radio" name="alamatsurat" value="Sesuai Domisili">Sesuai Domisili</label>
+                        <label><input type="radio" name="alamatsurat" value="Kantor/Tempat Kerja">Kantor/Tempat Kerja</label>
+                        </div>
+                    </div>
+                    <div class="form-section2">
+                        <h2>DATA KEUANGAN</h2>
+                    </div>
+                    <div class="form-group3">
+                        <label>Penghasilan Perbulan:</label>
+                        <label><input type="radio" name="Penghasilan" value="s/d 5Juta">s/d 5Juta</label>
+                        <label><input type="radio" name="Penghasilan" value="5-10juta">5-10juta</label>
+                        <label><input type="radio" name="Penghasilan" value="10-50juta">10-50juta</label>
+                        <label><input type="radio" name="Penghasilan" value="50-100juta">50-100juta</label>
+                        <label><input type="radio" name="Penghasilan" value="diatas 100juta">diatas 100juta</label>
+                    </div>
+                    <div class="form-group3">
+                        <label>Transaksi Normal Harian:</label>
+                        <label><input type="radio" name="Pengeluaran" value="s/d 10Juta">s/d 10Juta</label>
+                        <label><input type="radio" name="Pengeluaran" value="s/d 50juta">s/d 50juta</label>
+                        <label><input type="radio" name="Pengeluaran" value="s/d 100juta">s/d 100juta</label>
+                        <label><input type="radio" name="Pengeluaran" value="s/d 1miliyar">s/d 1miliyar</label>
+                        <label><input type="radio" name="Pengeluaran" value="diatas 1m">diatas 1m</label>
+                    </div>
+                    <div class="form-group3">
+                        <label>Sumber Utama:</label>
+                        <label><input type="radio" name="sumberutama" value="Gaji">Gaji</label>
+                        <label><input type="radio" name="sumberutama" value="Hasil Usaha">Hasil Usaha</label>
+                        <label>Lainnya: </label>
+                        <input type="text" name="sumberutama" class="grup">
+                    </div>
+                    <div class="form-group3">
+                        <label>Rekening di Bank BRI: </label>
+                        <div>
+                            <label><input type="text" name="rekening" class="grup"></label>
+                        </div>
+                            <label>Rekening di Bank Lain: </label>
+                        <div>
+                            <label><input type="text" name="rekening" class="grup"></label>
+                        </div>
+                    </div>
+                    <div class="form-group3">
+                        <label>Jenis:</label>
+                        <label><input type="radio" name="jenisbank" value="Tabungan">Tabungan</label>
+                        <label><input type="radio" name="jenisbank" value="Deposito">Deposito</label>
+                        <label>Lainnya: </label>
+                        <input type="text" name="jenisbank" class="grup">
+                    </div>
+                    <div class="form-group3">
+                        <label>Kartu Kredit di Bank BRI: </label>
+                        <label>Kartu Kredit Lain: </label>
+                        <div>
+                            <label><input type="radio" name="kartukredit" value="Ada">Ada</label>
+                            <label>Penerbit</label><input type="text" name="kartukredit" class="grup">
+                            <label><input type="radio" name="kartukredit" value="classic">Classic</label>
+                            <label><input type="radio" name="kartukredit" value="gold">Gold</label>
+                            <label><input type="radio" name="kartukredit" value="premium">Premium</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="kartukredit" value="Tidak">Tidak</label>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
