@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">DEYA</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Resume</a></li>
+          <li><a href="#projects2">Portfolio</a></li>
+          <li><a href="#projects">Certificate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">DEYA</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Resume</a></li>
+          <li><a href="#projects2" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Certificate</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/11zon_cropped (2).png" alt="Deya profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Deya Helmawanti</h1>
+        <p class="section__text__p2">"A technology and education enthusiast."</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/deya-helmawanti-754985245/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/deyahelma'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/11zon_cropped (3).png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Achievement</h3>
+              <p>Colaborated<br />With Figma</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Contact</h3>
+              <p>deyahelma@gmail.com<br />+6289509762094</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I am Dr. Deya Helmawanti, S.Kom., M.Kom., a professional who seamlessly combines the worlds of academia, analytics, and creative arts in my career. 
+              Currently, I serve as the Rector of Universitas Brawijaya while also contributing as a freelance Data Analyst at Google. 
+              In addition, I run a company specializing in photography and graphic design, collaborating closely with Figma.
+              I am an enthusiastic, highly motivated individual who strives to give my best in every aspect of life. This is why I live by the principle:  
+              <b>"If not now, when? If not me, who?"</b>  
+              This principle drives me to keep moving forward, face challenges with courage, and create a positive impact in the realms of education, technology, and art.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Resume</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Education</h2>
+            <div class="article-container">
+              <article>
+                <div class="edu">
+                  <h3>Doctoral Degree // Management <br> 2029-2032</h3>
+                  <p>Universitas Brawijaya</p>
+                </div>
+              </article>
+
+              <article>
+                <div class="edu">
+                  <h3>Master Degree // Information System <br> 2027-2028 </h3>
+                  <p>Universitas Jambi</p>
+                </div>
+              </article>
+
+              <article>
+                <div class="edu">
+                  <h3>Bachelor Degree // Information System <br> 2022-2026</h3>
+                  <p>Universitas Nurdin Hamzah, Kota Jambi</p>
+                </div>
+              </article>
+              <article>
+                <div class="edu">
+                  <h3>Senior High School <br> 2020-2022</h3>
+                  <p>SMAN 4 Kota Jambi</p>
+                </div>
+              </article>
+              <article>
+                <div class="edu">
+                  <h3>Junior High School <br> 2017-2019</h3>
+                  <p>SMPN 11, Kota Jambi</p>
+                </div>
+              </article>
+              <article>
+                <div class="edu">
+                  <h3>Elementary School <br> 2010-2016</h3>
+                  <p>SDN 25, Kota Jambi</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Professional Experience</h2>
+            <div class="article-container">
+              <article>
+                <div class="edu">
+                  <h3>Freelancer Data Analyst & UI/UX Designer <br> 2026-present</h3>
+                  <p>Design and maintain data systems and databases, using statistical tools
+                    to interpret data sets, design visual elements, collaborate with 
+                    team of developers, business analysts, & product managers
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div class="edu">
+                  <h3>Asean Youth Friendship Network (AYFN) <br> 2025-2027</h3>
+                  <p>Independent youth community 
+                    which can facilitate youth in the Southeast Asia region to build friendship networks.</p>
+                </div>
+              </article>
+              <article>
+                <div class="edu">
+                  <h3>Internship<br>Bank Indonesia <br> 2025</h3>
+                  <p>Processing Data, Making Reports, Data Visualization</p>
+                </div>
+              </article>
+              <article>
+                <div class="edu">
+                  <h3>Curry Nawa, Kota Jambi<br> 2024</h3>
+                  <p>As cashier and barista</p>
+                </div>
+              </article>
+              <article>
+                <div class="edu">
+                  <h3>Liaison Officer Pekan Olahraga Provinsi XXIII (LO PORPROV XXIII) 
+                    <br> KONI, Kota Jambi <br> 2023
+                  </h3>
+                  <p>Accompany, assist and ensure smooth communication and comfort of contingent participants
+                    starting from the opening to the closing of the event
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects2'"
+      />
+    </section>
+    <section id="projects2">
+      <p class="section__text__p1">Here it is my</p>
+      <h1 class="title">Portfolio</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/7 Data Analysis Project Ideas to Boost Your Skills – Data Masters Club.jpg"
+                alt="Portfolio"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Analyze Data</h2>
+          </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/Creating a Responsive Site Map for Your Website.jpg"
+                  alt="Portfolio"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Creating marketplace aplication</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/2.png"
+                  alt="Portfolio"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Wedding Invitation</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Certificate</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Capture1.JPG"
+                alt="Certificate"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bootcamp Microsoft Excel By Edspert.id</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./assets/SERTIF Excel.pdf'"
+              >
+                Excel Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Capture2.JPG"
+                alt="Certificate"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bootcamp IoT By Edspert.id</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./assets/SERTIF IoT.pdf'"
+              >
+                IoT Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Capture3.JPG"
+                alt="Certificate"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Webinar Interaksi Manusia dan Komputer</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./assets/SERTIFIKAT Deya Helmawanti.pdf'"
+              >
+                Webinar Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Capture4.JPG"
+                alt="Certificate"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Microsoft Azure Data Fundamentals</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./assets/sertifikat microsoft.pdf'"
+              >
+              Microsoft Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Capture5.JPG"
+                alt="Certificate"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Analytics By RevoU</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./assets/sertifikat revo u.pdf'"
+              >
+              RevoU Certificate
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Sertifikat Panitia PKM Deya.png"
+                alt="Certificate"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pengabdian Kepada Masyarakat</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./assets/Sertifikat Panitia PKM Deya.png'"
+              >
+              PKM Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBlGJdlgxwlWcFgBkBLvgZbbXBRtBXBxtnqscpjlvTDcphQktKzpFfjHzMtFLtNLSdFvrS">deyahelma@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/deya-helmawanti-754985245/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Resume</a></li>
+            <li><a href="#projects">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
